@@ -85,7 +85,7 @@ Data$Global_reactive_power <- as.double(Data$Global_reactive_power)
 Data$TimeDate <- strptime(paste(Data$Date, Data$Time),"%Y-%m-%d %H:%M:%S")
 png(filename="plot4.png")
 # set the canvas
-par(mfrow=c(2,2))
+par(mfcol=c(2,2))
 #put graphs in
 Graph1()
 Graph2()
